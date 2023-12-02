@@ -58,6 +58,7 @@ jobs:
 
       - name: Deployer application Python Backend
         run: |
+          kubectl delete -f kubernetes/python-backend.yaml
           kubectl apply -f kubernetes/python-backend.yaml
       - name: Deployer application Reactjs Frontend
         run: |
