@@ -73,8 +73,8 @@ const Manage = () => {
       <div className="row side-row">
         <p id="manage"></p>
         <ButtonToolbar>
-          <Button variant="primary" onClick={handleAdd}>
-            Ajouter
+          <Button variant="warning" onClick={handleAdd}>
+            Ajouter etudiant 
           </Button>
           <AddStudentModal show={addModalShow} setUpdated={fetchStudents} onHide={AddModelClose}></AddStudentModal>
         </ButtonToolbar>
